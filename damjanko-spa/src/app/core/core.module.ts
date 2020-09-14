@@ -1,11 +1,13 @@
 /* 3rd party */
 import { ModuleWithProviders, NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
+/* 1st party */
+import { CommonImportsModule } from './common-imports.module';
 
 const services: any[] = [];
 
 @NgModule({
-    imports: [CommonModule],
+    imports: [CommonImportsModule],
     providers: [...services],
 })
 export class CoreModule {

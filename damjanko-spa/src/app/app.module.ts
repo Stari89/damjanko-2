@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 
 /* 1st party */
 import { AppRoutingModule } from './app-routing.module';
+import { CommonImportsModule } from '@core/common-imports.module';
 import { CoreModule } from '@core/core.module';
 
 /* module */
@@ -13,10 +14,11 @@ import { AppComponent } from './app.component';
 @NgModule({
     declarations: [AppComponent],
     imports: [
-        BrowserModule,
         AppRoutingModule,
-        CoreModule,
         BrowserAnimationsModule,
+        BrowserModule,
+        CommonImportsModule,
+        CoreModule,
     ],
     providers: [],
     bootstrap: [AppComponent],

@@ -10,6 +10,13 @@ const routes: Routes = [
             ),
     },
     {
+        path: 'sign-in',
+        loadChildren: () =>
+            import('./modules/sign-in/sign-in.module').then(
+                (m) => m.SignInModule
+            ),
+    },
+    {
         path: '**',
         redirectTo: 'not-found',
     },

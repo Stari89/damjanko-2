@@ -1,6 +1,9 @@
+/* 3rd party */
 import { Routes, RouterModule } from '@angular/router';
-import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { NgModule } from '@angular/core';
+
+/* module */
+import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 
 const routes: Routes = [
     {

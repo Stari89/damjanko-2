@@ -14,8 +14,11 @@
         "lib": ["es2018", "dom"],
         "paths": {
             "@core/*": ["src/app/core/*"],
+            /* modules */
             "@not-found/*": ["src/app/modules/not-found/*"],
-            "@sign-in/*": ["src/app/modules/sign-in/*"]
+            "@sign-in/*": ["src/app/modules/sign-in/*"],
+            /* shared */
+            "@layout/*": ["src/app/shared/layout/*"]
         }
     }
 }

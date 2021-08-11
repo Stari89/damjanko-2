@@ -1,8 +1,12 @@
 import { Injectable } from '@nestjs/common';
 
+export interface IAppStatus {
+    status: 'ok' | 'not ok';
+}
+
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
-  }
+    getAppStatus(): IAppStatus {
+        return { status: 'ok' };
+    }
 }

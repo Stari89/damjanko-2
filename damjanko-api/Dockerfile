@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:16.6.1-alpine
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 
@@ -8,4 +8,4 @@ RUN npm install
 
 COPY . ./
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "start:dev"]
